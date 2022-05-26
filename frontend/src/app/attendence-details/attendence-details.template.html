@@ -1,0 +1,46 @@
+<div class="ajax-loader" *ngIf="is_ajax_display">
+    <img src="../../assets/Spinner-5.gif" class="img-responsive" />
+  </div>
+<div class="card" style="margin-top: 10px;">
+    <div class="card-header bg-primary text-white">
+        Student Attendence Details
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <select class="form-select" aria-label="Default select example" (change)="on_select_subject($event)">
+                    <option selected>Select Subject</option>
+                    <option *ngFor="let item of list_of_subjcets" value = "{{item}}">{{item}}</option>
+                  </select>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" aria-label="Default select example" (change)="on_select_roll($event)">
+                    <option selected>Select Roll Number</option>
+                    <option *ngFor="let item of list_of_students" value = "{{item}}">{{item}}</option>
+                  </select>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <table class="table table-success table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col"> #</th>
+                    <th scope="col"> Teacher name</th>
+                    <th scope="col"> Subject Name</th>
+                    <th score = "col"> Roll Number</th>
+                    <th scope = "col"> Class join Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of attendece_record;let i = index">
+                        <th scope="row"> {{i}}</th>
+                        <td>{{item[0]}}</td>
+                        <td>{{item[1]}}</td>
+                        <td>{{item[2]}}</td>
+                        <td>{{item[3]}}</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

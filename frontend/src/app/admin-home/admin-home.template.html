@@ -1,0 +1,19 @@
+<div class="container container-position">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="text-align: center;">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-primary" (click)="go_to_class_entry_page()">Enter Class Details</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary" (click) = "go_to_attendence_details_page()">Check Attendence Status</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

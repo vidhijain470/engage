@@ -1,0 +1,39 @@
+<div class="ajax-loader" *ngIf="is_ajax_display">
+    <img src="../../assets/Spinner-5.gif" class="img-responsive" />
+  </div>
+<div class="card" style="margin:1cm;">
+    <div class="card-header bg-primary text-white">Enter Class Details</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="#subjectname" class="form-label">Enter subject name</label>
+                <input [(ngModel)]="subject_name" type="text" id = "#subjectname" class="form-control" placeholder="Enter subject name"/>
+            </div>
+            <div class="col-md-6">
+                <label for = "#classlink" class="form-label">Enter Class Link</label>
+                <input [(ngModel)]="class_link" type="text" id="#classlink" class="form-control"  placeholder="Enter class link"/>
+            </div>
+        </div>
+        <div class="row">
+            <label for = "#rollnumber" class="form-label">Enter Roll Number</label>
+            <input [(ngModel)]="roll_number" type="text" class="form-control" id="#rollnumber" placeholder="Enter roll number"/>
+        </div>
+        <div class="row">
+            <label for = "#studentphoto" class="form-label">Uplaod student photo</label>
+            <input (change)="changeInFileInput($event)" type="file" class="form-control" id=""#studentphoto/>
+              <div class="row" *ngIf="img_src != ''" style="margin-top: 5px;">
+                <img [src]="img_src" style="height: 100px !important; width: 100px !important;">
+              </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col-md-6" style="text-align: center;" [ngStyle]="{'color': message_color}">
+                {{message}}
+            </div>
+            <div class="col-md-6" style="text-align: right;">
+            <button class="btn btn-success" (click)="submit_student_details()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

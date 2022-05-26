@@ -1,0 +1,13 @@
+.ajax-loader {
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    z-index: +100 !important;
+    width: 100%;
+    height:100%;
+  }
+  
+  .ajax-loader img {
+    position: relative;
+    top:20%;
+    left:40%;
+  }
