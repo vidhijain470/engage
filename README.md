@@ -3,6 +3,10 @@ I have built a valuable attendance and login service for both teachers and stude
 
 ## How To Use? :pencil:
 ----------------------
+Test teacher login username : `teacher`
+
+
+Test teacher login password : `123`
 #### Install a module
 * Download or clone the repository
 * Download the module from https://drive.google.com/file/d/1RxvBRRExA2fiIfZow6MpqfoRDtIs4C6Y/view?usp=sharing and move this file to the backend folder.
