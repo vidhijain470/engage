@@ -73,3 +73,4 @@ Frontend -
 * HTML
 * CSS
 * Angular
+* Bootstrap
