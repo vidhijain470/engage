@@ -55,13 +55,21 @@ All The Module are Latest Version.
 * OpenCV
 * Pillow
 * Numpy
+* Flask
+* PyTorch
 
 Face Recognition Algorithms -
 * MTCNN
-* Vggface2
+* ResNet50 
 
 Software Used -
-* Pycharm 
 * VS CODE 
 * Git
+ 
+Database -
+* SQL lite
 
+Frontend -
+* HTML
+* CSS
+* Angular
