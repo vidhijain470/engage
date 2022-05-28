@@ -77,7 +77,7 @@ Frontend -
 * Bootstrap
 
 
-## 📖 Usage guide/ Application flow
+## Usage guide/ Application flow 📖 
 
 
 Test teacher username: `teacher`
